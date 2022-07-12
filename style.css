@@ -1,0 +1,452 @@
+/* Box sizing rules */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #7a304c;
+  letter-spacing: 0.04em;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+#container {
+  margin: 20px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "Londrina Solid", cursive;
+}
+
+#home {
+  cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Navbar */
+
+a {
+  text-decoration: none;
+  color: #dadee3;
+  transition: 0.5s ease;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  color: #8c5e6f;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 25px;
+  background-color: #370d18;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* .navbar p {
+  color: #dadee3;
+  font-size: 1.8rem;
+} */
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: auto;
+}
+
+/* Search */
+
+#searchButton {
+  background-color: #dadee3;
+  border: none;
+  color: #370d18;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#searchBox {
+  padding: 8px 18px;
+  border: none;
+  background-color: #dadee3;
+  color: #370d18;
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+
+/* Dropdown listis */
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #dadee3;
+  padding: 14px 16px;
+  background-color: #360e18;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.dropbtn {
+  transition: 0.5s ease;
+}
+
+.dropbtn:hover {
+  color: #8c5e6f;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dadee3;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #360e18;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #f1f1f1;
+  background-color: #8c5e6f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input {
+  border: #f1f1f1;
+  background-color: rgb(254, 254, 255);
+}
+
+/* Hompage */
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.movieDiv {
+  width: 33%;
+  text-align: center;
+}
+
+.movieDiv img {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.movieDiv h3 {
+  color: #dadee3;
+  cursor: pointer;
+}
+
+/* Actors page */
+
+.actorDiv {
+  width: 33%;
+  padding: 15px;
+}
+
+.actorDiv h3 {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.actorDiv img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .movieDiv {
+    width: 49%;
+  }
+  .actorDiv {
+    width: 49%;
+  }
+}
+
+/* Single movie & actor page display */
+
+.row {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Single movie page */
+
+/* logo */
+
+#movie-production-company-logo {
+  width: 25%;
+  padding: 30px 0;
+}
+
+/* Text */
+
+.moviePageInfo {
+  padding: 15px;
+  justify-content: center;
+  word-wrap: break-word;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.moviePageImg {
+  display: block;
+  margin: 0;
+  width: 30%;
+}
+
+#movie-overview p {
+  text-indent: 20px;
+  padding: 15px;
+  width: 33%;
+}
+
+.row #movie-overview {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+
+#footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: #360e18;
+  height: 50px;
+}
+
+#footer p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Text style */
+
+h2 {
+  margin-bottom: 24px;
+  color: #dadee3;
+  font-weight: 300;
+}
+
+h1 {
+  color: #dadee3;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 100;
+}
+
+h3,
+h4 {
+  color: #dadee3;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+/* Single movie page */
+
+#related-movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#related-movie p {
+  padding: 3px;
+  font-size: 1rem;
+}
+
+#related-movie img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Actors page */
+
+#actors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#actors p {
+  padding: 3px;
+  font-size: 1.2rem;
+}
+
+#actors li img {
+  width: 100%;
+}
+
+#actors li {
+  width: 100%;
+  max-width: 250px;
+}
+
+.moviePageInfo {
+  text-align: left;
+  padding: 0 22px;
+  justify-content: space-between;
+}
+
+.row .moviePageInfo h2,
+p {
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+
+/* Hover Part */
+
+.hoverDiv {
+  position: static;
+  background: pink;
+  color: #32243d;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.movieDiv:hover .hoverDiv {
+  font-family: "Londrina Solid", cursive;
+  cursor: pointer;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+#actorMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#actor-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#actorMovies p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#actorMovies img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* About page */
+
+#aboutContainer {
+  margin: 10px;
+  width: 100%;
+}
+
+#aboutHeader {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #dadee3;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#fetchGif {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#aboutParagraph {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dadee3;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+
+#aboutContext {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 30px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get in loser, we're going coding!</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="navbar">
+        <img width="100px" src="logo.png" alt="logo" class="logo" />
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search here"
+            aria-label="Search"
+            id="searchBox"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 search_button"
+            type="submit"
+            id="searchButton"
+          >
+            Search
+          </button>
+        </form>
+        <a id="home" class="a" onclick="clear(), autorun()">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Genres
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="getGenre('action')">Action</a>
+            <a href="#" onclick="getGenre('animation')">Animation</a>
+            <a href="#" onclick="getGenre('comedy')">Comedy</a>
+            <a href="#" onclick="getGenre('drama')">Drama</a>
+            <a href="#" onclick="getGenre('romance')">Romance</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Filter
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="popularMovies()">Popular</a>
+            <a href="#" onclick="topRatedMovies()">Top Rated</a>
+            <a href="#" onclick="nowPlayingMovies()">Now Playing</a>
+            <a href="#" onclick="upcomingMovies()">Upcoming</a>
+          </div>
+        </div>
+        <a class="a" href="#" onclick="listActors()">Actors</a>
+        <a id="about" class="a" href="#">About</a>
+      </div>
+    </div>
+    <div id="container"></div>
+    <footer id="footer">
+      <p>
+        &copy; 2022 Burn Book for Movies. All rights reserved. Powered by
+        <a href="https://github.com/Ramaaldakkak">Rama</a>
+        and
+        <a href="https://github.com/oznuren">Öznur</a>
+      </p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
